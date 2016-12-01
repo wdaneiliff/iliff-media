@@ -1,3 +1,8 @@
+.header {
+  z-index: 1000;
+  height: 50px;
+}
+
 h1.iliff-media a {
   font-family: 'Bangers', cursive;
   text-decoration: none;
@@ -7,6 +12,7 @@ h1.iliff-media a {
   padding-left: 50px;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   float: left;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -153,4 +159,35 @@ h1.iliff-media a {
   width: 0%;
   left: 50%;
   border: none;
+}
+
+
+.nav-container {
+  position: absolute;
+  width: 200px;
+  right: 0;
+}
+
+.nav-container h3 {
+  display: inline-block;
+}
+
+.nav-container h3 a {
+  text-decoration: none;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 5px;
+  font-size: 20px;
+  transition: all .3s ease;
+  text-shadow: 1px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+.about-link a {
+  color: #fbd154;
+}
+.work-link a {
+  color: #54c1d0;
+}
+.contact-link a {
+  color: #ed4e52;
 }

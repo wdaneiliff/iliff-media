@@ -1,6 +1,6 @@
 img.logo {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
@@ -10,4 +10,82 @@ img.logo {
   img.logo {
     width: 300px;
   }
+}
+
+section.home-container {
+  height:100vh;
+  position: relative;
+}
+
+
+.downArrow {
+  position: absolute;
+  bottom: 75px;
+  left: 50%;
+  transform:translateX(-50%);
+  margin-left:-20px;
+  width: 75px;
+  /*background-image: url("./downArrow");*/
+  background-size: contain;
+  transition: width .3s ease;
+}
+.downArrow:hover {
+  width: 80px;
+}
+
+@media (max-width: 768px) {
+  .downArrow {
+    bottom: 85px;
+  }
+}
+
+/*@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+	40% {
+    -webkit-transform: translateY(-20px);
+  }
+	60% {
+    -webkit-transform: translateY(-10px);
+  }
+}*/
+
+@-webkit-keyframes bounce {
+	0% {
+    -webkit-transform: translateY(0);
+  }
+	45% {
+    -webkit-transform: translateY(0);
+  }
+	50% {
+    -webkit-transform: translateY(-20px);
+  }
+
+	55% {
+      -webkit-transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+  }
+	65% {
+    -webkit-transform: translateY(0px);
+  }
+  70% {
+    -webkit-transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+  }
+
+}
+
+.bounce{
+	-webkit-animation-name: bounce;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
 }

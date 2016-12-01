@@ -5,7 +5,7 @@ import logo from './work-guy.png';
 export default class Work extends Component {
   render() {
     return (
-      <div>
+      <section className="work-section-container">
         <div className="left-work-container">
 
         </div>
@@ -15,7 +15,7 @@ export default class Work extends Component {
         <div className="right-work-container">
 
         </div>
-      </div>
+      </section>
     );
   }
 }

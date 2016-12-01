@@ -12,7 +12,7 @@ export default class MainNav extends Component {
   render() {
 
     return (
-      <header>
+      <header className="header">
           <h1 className="iliff-media"><Link to="/">iliff Media</Link></h1>
             <div onClick={this.hamburgerClickHandler} className="hamburger">
               <span></span>
@@ -20,6 +20,13 @@ export default class MainNav extends Component {
               <span></span>
               <span></span>
             </div>
+            <nav>
+              <ul className="nav-container">
+                <li><h3 className="about-link"><Link to="/about"><span>About</span></Link></h3></li>
+                <li><h3 className="work-link"><Link to="/work"><span>Work</span></Link></h3></li>
+                <li><h3 className="contact-link"><Link to="/contact"><span>Contact</span></Link></h3></li>
+              </ul>
+            </nav>
       </header>
     )
   }

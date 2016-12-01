@@ -6,7 +6,7 @@ import logo from './contact-guy.png';
 export default class Contact extends Component {
   render() {
     return (
-      <div>
+      <section className="contact-section-container">
         <div className="contact-form-container">
         <div className="contact-form">
           <h1>Let's Chat!</h1>
@@ -19,7 +19,7 @@ export default class Contact extends Component {
       <div className="img-container">
         <img src={logo} />
       </div>
-    </div>
+    </section>
     );
   }
 }
