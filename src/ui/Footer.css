@@ -17,6 +17,7 @@
   letter-spacing: 5px;
   font-size: 30px;
   transition: all .3s ease;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .nav-container h3 a:hover {
@@ -26,7 +27,7 @@
 .about-link a {
   color: #fbd154;
   position: absolute;
-  left: 5%;
+  left: 50px;
 }
 .work-link a {
   color: #54c1d0;
@@ -37,5 +38,5 @@
 .contact-link a {
   color: #ed4e52;
   position: absolute;
-  right: 5%;
+  right: 50px;
 }

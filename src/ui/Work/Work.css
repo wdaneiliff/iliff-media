@@ -1,0 +1,17 @@
+.left-work-container {
+
+}
+.right-work-container {
+
+}
+
+.work-img-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.work-img-container img {
+  width: 450px;
+}

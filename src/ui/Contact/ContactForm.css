@@ -1,0 +1,49 @@
+form span {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 2px;
+  padding-right: 10px;
+  font-size: 22px;
+  width: 100px;
+  display: inline-block;
+}
+
+form input {
+  border: none;
+    border-bottom: 3px solid black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  min-width: 250px;
+}
+
+.submitForm {
+  border: 4px solid black;
+  text-transform: uppercase;
+  background: #fff;
+  font-size: 26px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 3px;
+  transition: all .3s ease;
+  padding: 10px 20px;
+  margin-top: 50px
+}
+.submitForm:hover {
+  background:#49ba9c;
+  color: #fff;
+  cursor: pointer;
+}
+
+*:focus {
+    outline: none;
+}
+
+.input-name {
+  color: #ed4e52;
+}
+.input-company {
+  color: #54c1d0;
+}
+
+.input-email {
+  color: #fbd154;
+}
