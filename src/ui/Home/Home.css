@@ -1,26 +1,44 @@
+body {
+overflow-x: hidden;
+padding: 0;
+margin:0;
+}
+
+
+.hello {
+  position: absolute;
+  top: 2000px;
+}
+
+.byebye {
+  opacity: .2;
+}
+
 img.logo {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 350px;
 }
 
 @media (max-width: 768px) {
   img.logo {
     width: 300px;
+    top: 55%;
   }
 }
 
 section.home-container {
   height:100vh;
   position: relative;
+    /*overflow: hidden;*/
 }
 
 
 .downArrow {
   position: absolute;
-  bottom: 75px;
+  bottom: 10px;
   left: 50%;
   transform:translateX(-50%);
   margin-left:-20px;
@@ -35,7 +53,7 @@ section.home-container {
 
 @media (max-width: 768px) {
   .downArrow {
-    bottom: 85px;
+    bottom: 10px;
   }
 }
 
@@ -88,4 +106,10 @@ section.home-container {
     animation-name: bounce;
     animation-iteration-count: infinite;
     animation-duration: 6s;
+}
+
+
+.about {
+  border-top: 2px solid black;
+padding-top: 200px;
 }

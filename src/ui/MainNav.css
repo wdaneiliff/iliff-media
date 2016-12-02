@@ -1,9 +1,22 @@
 .header {
-  z-index: 1000;
+  z-index: 5000;
   height: 50px;
+  z-index: 1000;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    background: white;
 }
 
-h1.iliff-media a {
+.topHeader {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 9000;
+  background: white;
+}
+
+h1.iliff-media span {
   font-family: 'Bangers', cursive;
   text-decoration: none;
   color: #49ba9c;
@@ -14,9 +27,12 @@ h1.iliff-media a {
   float: left;
   margin-top: 10px;
 }
+h1.iliff-media span:hover {
+  cursor: pointer;
+}
 
 @media (max-width: 768px) {
-  h1.iliff-media a {
+  h1.iliff-media span {
     padding-left: 10px;
     font-size: 42px;
   }
@@ -60,6 +76,9 @@ h1.iliff-media a {
   transition: .25s ease-in-out;
   border: 2px solid black;
 }
+.hamburger span:hover {
+  cursor: pointer;
+}
 
 
 /* Icon 3 */
@@ -99,6 +118,7 @@ h1.iliff-media a {
     transition: .5s ease-in-out;
     cursor: pointer;
     margin-right: 10px;
+    z-index: 4000;
   }
 
    .hamburger span {
@@ -161,33 +181,74 @@ h1.iliff-media a {
   border: none;
 }
 
+.nav-container.showNav {
+  transform: translateX(85px);
+}
+
+@media (max-width: 768px) {
+  .nav-container.showNav {
+    transform: translate(0, 0);
+    width: 100%;
+    text-align: center;
+  }
+  .nav-container.showNav li {
+    display: inline;
+    padding: 20px;
+  }
+}
+
 
 .nav-container {
+  z-index: 999;
   position: absolute;
   width: 200px;
   right: 0;
+  list-style: none;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transition: all .3s ease;
+  top:75px;
 }
 
 .nav-container h3 {
   display: inline-block;
 }
 
-.nav-container h3 a {
+.nav-container h3 span {
   text-decoration: none;
   font-family: 'Bangers', cursive;
   letter-spacing: 5px;
   font-size: 20px;
   transition: all .3s ease;
   text-shadow: 1px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  line-height: 23px;
+}
+
+.nav-container h3 span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 
-.about-link a {
+.about-link span {
   color: #fbd154;
 }
-.work-link a {
+.work-link span {
   color: #54c1d0;
 }
-.contact-link a {
+.contact-link span {
   color: #ed4e52;
+}
+
+@media (max-width: 768px) {
+  .nav-container li {
+    display: inline;
+    padding: 20px;
+  }
+  .nav-container {
+    width: 100%;
+    transform:translateY(-100%);
+    -webkit-transform:translateY(-100%);
+    text-align: center;
+  }
 }

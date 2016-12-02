@@ -5,15 +5,14 @@ import logo from './about-guy.png';
 export default class About extends Component {
   render() {
     return (
-      <section className="about-section-container">
+      <section ref="about-section" className="about-section-container">
+        <div className="about-img-container">
+          <img src={logo} />
+        </div>
         <div className="content-container">
         <div className="content">
-          <h1>About us!</h1>
-          <p>la la la la la la la la la la</p>
+          <h1>About Us</h1>
         </div>
-      </div>
-      <div className="about-img-container">
-        <img src={logo} />
       </div>
     </section>
     );

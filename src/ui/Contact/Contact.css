@@ -1,6 +1,7 @@
 .contact-section-container {
   height: 600px;
   position: relative;
+  padding-top: 300px;
 }
 
 .contact-form-container {
