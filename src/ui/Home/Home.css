@@ -111,8 +111,31 @@ section.home-container {
 }
 
 
-.about {
-  border-top: 2px solid black;
-padding-top: 100px;
+.fixedAbout {
+  position: fixed !important;
+  top: 0px;
+  background: #fff;
+  z-index: 6000;
+}
+.fixedWork {
+  position: fixed !important;
+  top: 20px;
+  background: #fff;
+  z-index: 6000;
+}
 
+@media (max-width: 791px) {
+  .fixedWork {
+    top: 30px;
+  }
+  .fixedAbout {
+    top: 20px;
+  }
+}
+.addPaddingForAbout {
+  padding-bottom: 800px;
+}
+
+.addPaddingForWork {
+  padding-bottom: 1550px;
 }

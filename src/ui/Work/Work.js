@@ -6,14 +6,16 @@ export default class Work extends Component {
   render() {
     return (
       <section className="work-section-container">
-        <div className="left-work-container">
+        <h1>Our Work</h1>
 
+        <div className="work-content-container">
+          <p>Mustache wayfarers cred kitsch, quinoa bicycle rights cliche
+            dreamcatcher ennui snackwave. Heirloom umami shabby chic squid,
+            tumeric intelligentsia flexitarian fashion axe copper mug lo-fi
+            activated charcoal vice.</p>
         </div>
         <div className="work-img-container">
           <img src={logo} />
-        </div>
-        <div className="right-work-container">
-
         </div>
       </section>
     );

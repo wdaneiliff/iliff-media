@@ -18,7 +18,11 @@ export default class ContactForm extends Component {
           <span>Email: </span>
           <input className="input-email" type="email" name="_replyto" /><br />
         </p>
-          <input className="submitForm" type="submit" value="Send Info" />
+        <p>
+          <span>Message: </span><br />
+          <textArea className="input-message" type="email" name="_replyto" /><br />
+        </p>
+          <input className="submitForm" type="submit" value="Submit" />
         </form>
     );
   }

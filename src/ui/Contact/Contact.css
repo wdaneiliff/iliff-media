@@ -1,12 +1,16 @@
 .contact-section-container {
-  height: 600px;
+  height: 550px;
   position: relative;
-  padding-top: 300px;
+  padding-top: 100px;
+  z-index: 6010;
+  background: #fff;
+  box-shadow: 0 -5px 5px -5px #333;
 }
 
 .contact-form-container {
   width: 50%;
   float: left;
+  padding-top: 0px;
 }
 .contact-form {
   padding: 25px;
@@ -15,8 +19,16 @@
 }
 
 .contact-form h1 {
+  margin-bottom: 25px;
   font-family: 'Bangers', cursive;
-  letter-spacing: 3px;
+  color: #ed4e52;
+  letter-spacing: 5px;
+  font-size: 50px;
+  transition: all .3s ease;
+  text-shadow: 2px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  line-height: 35px;
+  text-align: center;
+  margin-top: 0;
 }
 .contact-form p {
   font-family: 'Oswald', sans-serif;
@@ -27,12 +39,31 @@
   margin-top: 50px;
 }
 
-.img-container {
+.content-section-container .img-container {
   width: 50%;
   float: right;
-  margin-top: -100px;
 }
 
 .img-container img {
-  width: 450px;
+  width: 350px;
+}
+
+.input-message {
+  width: 360px;
+  margin-top: 15px;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 14px;
+  color: black;
+  font-family: Oswald;
+  resize: none;
+}
+
+
+footer {
+  height: 70px;
+  background-color: #49ba9c;
+  margin-top: 23px;
+  border-top: 3px solid black;
 }

@@ -13,7 +13,6 @@ form input {
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
-  min-width: 250px;
 }
 
 .submitForm {
@@ -25,10 +24,9 @@ form input {
   letter-spacing: 3px;
   transition: all .3s ease;
   padding: 10px 20px;
-  margin-top: 50px
 }
 .submitForm:hover {
-  background:#49ba9c;
+  background:#54c1d0;
   color: #fff;
   cursor: pointer;
 }

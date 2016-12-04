@@ -9,8 +9,7 @@ export default class Contact extends Component {
       <section className="contact-section-container">
         <div className="contact-form-container">
         <div className="contact-form">
-          <h1>Let's Chat!</h1>
-          <p>Send us your info and we will get back to you right away. <br /> We can't wait to work with you. </p>
+          <h1>Contact Us</h1>
           <div className="contact-inputs">
             <ContactForm />
           </div>
@@ -19,6 +18,9 @@ export default class Contact extends Component {
       <div className="img-container">
         <img src={logo} />
       </div>
+      <footer>
+        <span>iliff Media</span>
+      </footer>
     </section>
     );
   }
