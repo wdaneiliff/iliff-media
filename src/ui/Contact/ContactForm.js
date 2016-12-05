@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import styles from './ContactForm.css';
+import $ from 'jquery';
+
 
 export default class ContactForm extends Component {
+
+  // closeContactForm() {
+  //   $('.contact-inputs').removeClass('display');
+  //   $('.contact-form-open').removeClass('hide');
+  // }
+
   render() {
     return (
         <form action="https://formspree.io/wdaneiliff@gmail.com"

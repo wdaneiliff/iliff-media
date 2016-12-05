@@ -13,6 +13,7 @@ form input {
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
+  width: 90%;
 }
 
 .submitForm {
@@ -44,4 +45,32 @@ form input {
 
 .input-email {
   color: #fbd154;
+}
+
+.input-message {
+  color: #fbd154;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px !important;
+  letter-spacing: 1px;
+  color: #49ba9c !important;
+}
+
+/*.closeContactForm {
+  display: none !important;
+}*/
+
+@media(max-width: 791px) {
+  /*.closeContactForm {
+    display: block !important;
+    text-align: right;
+    width: 90%;
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+  .closeContactForm:hover {
+    cursor: pointer;
+  }*/
+  form input {
+    width: 90%;
+  }
 }

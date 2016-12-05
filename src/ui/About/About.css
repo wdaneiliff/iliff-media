@@ -1,6 +1,7 @@
 .about {
 padding-top: 100px;
 padding-bottom: 50px;
+background: #fff;
 
 }
 .about-section-container {
@@ -19,6 +20,10 @@ padding-bottom: 50px;
 }
 
 @media(max-width: 791px) {
+  .about-section-container h1 {
+    margin:0;
+  }
+
   .content-container {
     width: 90%;
       float: none;

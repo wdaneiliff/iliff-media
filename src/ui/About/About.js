@@ -12,12 +12,9 @@ export default class About extends Component {
         </div>
         <div className="content-container">
         <div className="content">
-          <p>Mustache wayfarers cred kitsch, quinoa bicycle rights cliche
-            dreamcatcher ennui snackwave. Heirloom umami shabby chic squid,
-            tumeric intelligentsia flexitarian fashion axe copper mug lo-fi
-            activated charcoal vice. Selvage man braid air plant, succulents
-            health goth tumeric cold-pressed bespoke humblebrag shabby chic
-            austin tilde thundercats church-key freegan.</p>
+          <p>Iliff Media is a creative design and development agency created by Dane Iliff. We service
+            businesses and professionals who need help building or re-imagining their online
+            presence.  All illustrations are also created by Dane.  </p>
         </div>
       </div>
     </section>

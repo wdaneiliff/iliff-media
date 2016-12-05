@@ -1,17 +1,12 @@
+.App {
+  background: #fff;
+}
+
 body {
 overflow-x: hidden;
 padding: 0;
 margin:0;
-}
-
-
-.hello {
-  position: absolute;
-  top: 2000px;
-}
-
-.byebye {
-  opacity: .2;
+background-color: #49ba9c;
 }
 
 img.logo {
@@ -33,6 +28,7 @@ section.home-container {
   height:100vh;
   position: relative;
   margin-bottom: 200px;
+  background: #fff;
     /*overflow: hidden;*/
 }
 
