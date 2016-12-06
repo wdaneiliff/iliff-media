@@ -12,11 +12,12 @@ export default class About extends Component {
         </div>
         <div className="content-container">
         <div className="content">
-          <p>Hey! I'm Dane and Iliff Media is a creative design and development
-            agency that I started in order to help people build or re-imagine their
-            online presence. We have experience in
-            designing and developing personal websites, ecommerce businesses and can provide personal illustration to any project.
-            All illustrations are handcrafted by Dane.  </p>
+          <p>Hey! I'm Dane. Iliff Media is a creative design and development
+            agency that I started in order to help businesses build or re-imagine their
+            online presence. I have experience in designing and developing personal
+            websites and larger ecommerce websites. I also would love to provide
+            illustration to any project.
+         </p>
         </div>
       </div>
     </section>
