@@ -16,7 +16,7 @@ export default class Contact extends Component {
       <section className="contact-section-container">
         <div className="contact-form-container">
         <div className="contact-form">
-          <h1>Contact Us</h1>
+          <h1>Contact</h1>
           <div className="contact-inputs">
             <ContactForm />
           </div>

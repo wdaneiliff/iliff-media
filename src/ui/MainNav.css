@@ -250,5 +250,8 @@ h1.iliff-media span:hover {
     transform:translateY(-100%);
     -webkit-transform:translateY(-100%);
     text-align: center;
+    background: #fff;
+    margin-top: 0;
+height: 50px;
   }
 }

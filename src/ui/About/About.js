@@ -6,15 +6,17 @@ export default class About extends Component {
   render() {
     return (
       <section ref="about-section" className="about-section-container">
-        <h1>About Us</h1>
+        <h1>About</h1>
         <div className="about-img-container">
           <img src={logo} />
         </div>
         <div className="content-container">
         <div className="content">
-          <p>Iliff Media is a creative design and development agency created by Dane Iliff. We service
-            businesses and professionals who need help building or re-imagining their online
-            presence.  All illustrations are also created by Dane.  </p>
+          <p>Hey! I'm Dane and Iliff Media is a creative design and development
+            agency that I started in order to help people build or re-imagine their
+            online presence. We have experience in
+            designing and developing personal websites, ecommerce businesses and can provide personal illustration to any project.
+            All illustrations are handcrafted by Dane.  </p>
         </div>
       </div>
     </section>

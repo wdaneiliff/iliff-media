@@ -11,11 +11,10 @@ export default class Work extends Component {
   render() {
     return (
       <section className="work-section-container">
-        <h1>Our Work</h1>
+        <h1>Work</h1>
 
         <div className="work-content-container">
-          <p>Mustache wayfarers cred kitsch, quinoa bicycle rights cliche
-            dreamcatcher ennui snackwave. Some of our most proud clients include: </p>
+          <p>We have partnered with a wide range of professionals and businesses. Some of our most proud clients include: </p>
           <ul>
             <li><a target="_blank" href="http://reachk2.com/"><img src={k2}/></a></li>
             <li><a target="_blank" href="https://chocolate-sun-website.myshopify.com/"><img src={chocSun}/></a></li> <br/>

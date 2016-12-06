@@ -4,6 +4,13 @@ padding-bottom: 50px;
 background: #fff;
 
 }
+
+@media(max-width: 791px) {
+  .about {
+    min-height: 500px;
+  }
+}
+
 .about-section-container {
   position: relative;
 }
