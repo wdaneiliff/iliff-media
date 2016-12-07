@@ -24,6 +24,13 @@ img.logo {
   }
 }
 
+@media (max-width: 500px) {
+  img.logo {
+    width: 200px;
+    top: 55%;
+  }
+}
+
 section.home-container {
   height:100vh;
   position: relative;

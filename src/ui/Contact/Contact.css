@@ -187,3 +187,14 @@ footer p span:nth-of-type(1) {
 .hide {
   display: none !important;
 }
+
+@media(max-width: 500px) {
+  footer p span {
+    list-style: none;
+    display: inline;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    font-size: 18px;
+    display: inline-block;
+}
+}

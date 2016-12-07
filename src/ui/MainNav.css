@@ -255,3 +255,10 @@ h1.iliff-media span:hover {
 height: 50px;
   }
 }
+
+@media (max-width: 500px) {
+  .nav-container li {
+    display: inline;
+    padding: 5px;
+  }
+}

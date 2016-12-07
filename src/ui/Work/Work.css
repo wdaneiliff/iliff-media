@@ -123,3 +123,9 @@
     text-align: center;
   }
 }
+
+@media(max-width: 500px) {
+  .work-content-container ul li img {
+    width: 100px !important;
+}
+}
