@@ -32,7 +32,9 @@ img.logo {
 }
 
 section.home-container {
-  height:100vh;
+  min-height: 100vh;
+  height: 100vh;
+  max-height:100vh;
   position: relative;
   margin-bottom: 200px;
   background: #fff;
@@ -122,7 +124,7 @@ section.home-container {
 }
 .fixedWork {
   position: fixed !important;
-  top: 20px;
+  /*top: 20px;*/
   background: #fff;
   z-index: 6000;
 }
@@ -132,7 +134,7 @@ section.home-container {
     top: 30px;
   }
   .fixedAbout {
-    top: 20px;
+    top: 0px;
   }
 }
 .addPaddingForAbout {

@@ -14,8 +14,8 @@ export default class Work extends Component {
         <h1>Work</h1>
 
         <div className="work-content-container">
-          <p>I have partnered with a various number of professionals and businesses.
-             Some of my most proud clients include: </p>
+          <p>I have worked with a various number of businesses.
+             Here are links to a couple of my most proud clients: </p>
           <ul>
             <li><a target="_blank" href="http://reachk2.com/"><img src={k2}/></a></li>
             <li><a target="_blank" href="https://chocolate-sun-website.myshopify.com/"><img src={chocSun}/></a></li> <br/>

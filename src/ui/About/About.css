@@ -2,12 +2,14 @@
 padding-top: 100px;
 padding-bottom: 50px;
 background: #fff;
-
+min-height: 100vh;
 }
 
 @media(max-width: 791px) {
   .about {
-    min-height: 500px;
+    min-height: 100vh;
+    padding-top: 150px;
+
   }
 }
 
@@ -22,7 +24,7 @@ background: #fff;
 
 .content-container {
   width: 50%;
-      padding-left: 150px;
+      padding-left: 50px;
       /*padding-top: 50px;*/
 }
 

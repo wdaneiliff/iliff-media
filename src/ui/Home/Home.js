@@ -10,29 +10,35 @@ import About from '../About/About';
 export default class Home extends Component {
 
   componentDidMount() {
+    const homeHeight = $('.home-container').height() + 200;
+    const aboutHeight = $('.about').height();
+    const workHeight = $('.work-section-container').height();
+    console.log(homeHeight + aboutHeight + workHeight);
+    console.log('home: ' + homeHeight);
+    console.log('about: ' + aboutHeight);
+
     $(window).scroll(() => {
       console.log(
          $(document).scrollTop()
       );
-      if($(document).scrollTop() > 835 ) {
+
+      if($(document).scrollTop() > homeHeight ) {
         $('.about').addClass('fixedAbout');
         $('.home-container').addClass('addPaddingForAbout');
       }
 
-      if($(document).scrollTop() < 835 ) {
+      if($(document).scrollTop() < homeHeight ) {
         $('.about').removeClass('fixedAbout');
         $('.home-container').removeClass('addPaddingForAbout');
       }
 
-      if($(document).scrollTop() > 1590 ) {
-        $('.home-container').addClass('addPaddingForWork');
-        $('.work-section-container').addClass('fixedWork');
-      }
 
-      if($(document).scrollTop() < 1590 ) {
-        $('.home-container').removeClass('addPaddingForWork');
-        $('.work-section-container').removeClass('fixedWork');
-      }
+      // if($(document).scrollTop() > (homeHeight + aboutHeight) ) {
+      //   $('.home-container').addClass('addPaddingForWork');
+      //   $('.work-section-container').addClass('fixedWork');
+      // }
+
+
 
       // if($(document).scrollTop() > 1665 ) {
       //   $('.home-container').addClass('addPaddingForWork');

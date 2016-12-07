@@ -4,7 +4,7 @@
   padding-top: 100px;
   z-index: 6010;
   background: #fff;
-  box-shadow: 0 -5px 5px -5px #333;
+  /*box-shadow: 0 -5px 5px -5px #333;*/
 }
 
 .contact-form-container {
@@ -197,4 +197,8 @@ footer p span:nth-of-type(1) {
     font-size: 18px;
     display: inline-block;
 }
+}
+
+footer p {
+  background: #fff;
 }
