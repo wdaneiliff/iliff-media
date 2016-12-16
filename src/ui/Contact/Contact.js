@@ -14,9 +14,10 @@ export default class Contact extends Component {
   render() {
     return (
       <section className="contact-section-container">
+        <h1>Contact</h1>
         <div className="contact-form-container">
         <div className="contact-form">
-          <h1>Contact</h1>
+          <p className="title">Contact Us!</p>
           <div className="contact-inputs">
             <ContactForm />
           </div>

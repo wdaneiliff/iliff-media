@@ -9,28 +9,28 @@ import About from '../About/About';
 
 export default class Home extends Component {
 
-  componentDidMount() {
-    const homeHeight = $('.home-container').height() + 200;
-    const aboutHeight = $('.about').height();
-    const workHeight = $('.work-section-container').height();
-    console.log(homeHeight + aboutHeight + workHeight);
-    console.log('home: ' + homeHeight);
-    console.log('about: ' + aboutHeight);
-
-    $(window).scroll(() => {
-      console.log(
-         $(document).scrollTop()
-      );
-
-      if($(document).scrollTop() > homeHeight ) {
-        $('.about').addClass('fixedAbout');
-        $('.home-container').addClass('addPaddingForAbout');
-      }
-
-      if($(document).scrollTop() < homeHeight ) {
-        $('.about').removeClass('fixedAbout');
-        $('.home-container').removeClass('addPaddingForAbout');
-      }
+  // componentDidMount() {
+  //   const homeHeight = $('.home-container').height() + 200;
+  //   const aboutHeight = $('.about').height();
+  //   const workHeight = $('.work-section-container').height();
+  //   console.log(homeHeight + aboutHeight + workHeight);
+  //   console.log('home: ' + homeHeight);
+  //   console.log('about: ' + aboutHeight);
+  //
+  //   $(window).scroll(() => {
+  //     console.log(
+  //        $(document).scrollTop()
+  //     );
+  //
+  //     if($(document).scrollTop() > homeHeight ) {
+  //       $('.about').addClass('fixedAbout');
+  //       $('.home-container').addClass('addPaddingForAbout');
+  //     }
+  //
+  //     if($(document).scrollTop() < homeHeight ) {
+  //       $('.about').removeClass('fixedAbout');
+  //       $('.home-container').removeClass('addPaddingForAbout');
+  //     }
 
 
       // if($(document).scrollTop() > (homeHeight + aboutHeight) ) {
@@ -44,12 +44,12 @@ export default class Home extends Component {
       //   $('.home-container').addClass('addPaddingForWork');
       //   $('.work-section-container').addClass('fixedWork');
       // }
-    })
-  }
+  //   })
+  // }
 
   scrollDown() {
     $('html,body').animate({
-        scrollTop: $(".about").offset().top},
+        scrollTop: $(".about-section-container").offset().top},
         'slow');
   }
 
