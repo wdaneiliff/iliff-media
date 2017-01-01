@@ -5,7 +5,13 @@
     height: 80px;
     position: fixed;
     width: 100%;
-    background: white;
+    /*background: white;*/
+}
+
+@media(max-width: 800px) {
+  .topHeader {
+    background: #fff;
+  }
 }
 
 .topHeader {
@@ -13,7 +19,7 @@
   position: fixed;
   width: 100%;
   z-index: 9000;
-  background: white;
+  /*background: white;*/
 }
 
 h1.iliff-media span {
@@ -25,7 +31,6 @@ h1.iliff-media span {
   padding-left: 50px;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   float: left;
-  margin-top: 10px;
 }
 h1.iliff-media span:hover {
   cursor: pointer;
@@ -35,6 +40,18 @@ h1.iliff-media span:hover {
   h1.iliff-media span {
     padding-left: 10px;
     font-size: 42px;
+  }
+}
+
+@media(max-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+  .topHeader {
+    text-align: center;
+  }
+  .topHeader h1 span {
+    float: none;
   }
 }
 

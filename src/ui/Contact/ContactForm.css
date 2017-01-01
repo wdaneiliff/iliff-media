@@ -13,7 +13,7 @@ form input {
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
-  width: 90%;
+  width: 100%;
 }
 
 .submitForm {
@@ -55,34 +55,15 @@ form input {
   color: #49ba9c !important;
 }
 
-/*.closeContactForm {
-  display: none !important;
-}*/
 
 @media(max-width: 791px) {
-  /*.closeContactForm {
-    display: block !important;
-    text-align: right;
-    width: 90%;
-    font-size: 30px;
-    font-family: sans-serif;
-  }
-  .closeContactForm:hover {
-    cursor: pointer;
-  }*/
   form input {
-    width: 90%;
+    width: 100%;
   }
 }
 
-@media(max-width: 500px) {
-  .input-message {
-    width: 280px !important;
-  }
-  .contact-form p {
-    width: 280px !important;
-}
-.contact-form p:nth-of-type(1), .contact-form p:nth-of-type(2), .contact-form p:nth-of-type(4) {
-  display: none;
-}
+.contact-form {
+  padding: 25px;
+  border: 2px solid black;
+  background: #fff;
 }

@@ -6,25 +6,16 @@ import $ from 'jquery';
 
 export default class Contact extends Component {
 
-  // openContactForm() {
-  //   $('.contact-inputs').addClass('display');
-  //   $('.contact-form-open').addClass('hide');
-  // }
-
   render() {
     return (
       <section className="contact-section-container">
         <h1>Contact</h1>
         <div className="contact-form-container">
         <div className="contact-form">
-          <p className="title">Contact Us!</p>
           <div className="contact-inputs">
             <ContactForm />
           </div>
         </div>
-      </div>
-      <div className="img-container">
-        <img src={logo} />
       </div>
       <footer>
         <p><span>310.633.0716</span><span>dane@iliff.media</span></p>

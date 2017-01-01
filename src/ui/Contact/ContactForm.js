@@ -19,10 +19,6 @@ export default class ContactForm extends Component {
           <input className="input-name" type="text" name="name" /><br />
         </p>
         <p>
-          <span>Company: </span>
-          <input className="input-company" type="text" name="company" /><br />
-        </p>
-        <p>
           <span>Email: </span>
           <input className="input-email" type="email" name="_replyto" /><br />
         </p>

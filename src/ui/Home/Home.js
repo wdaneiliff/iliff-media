@@ -9,43 +9,42 @@ import About from '../About/About';
 
 export default class Home extends Component {
 
-  // componentDidMount() {
-  //   const homeHeight = $('.home-container').height() + 200;
-  //   const aboutHeight = $('.about').height();
-  //   const workHeight = $('.work-section-container').height();
-  //   console.log(homeHeight + aboutHeight + workHeight);
-  //   console.log('home: ' + homeHeight);
-  //   console.log('about: ' + aboutHeight);
-  //
-  //   $(window).scroll(() => {
-  //     console.log(
-  //        $(document).scrollTop()
-  //     );
-  //
-  //     if($(document).scrollTop() > homeHeight ) {
-  //       $('.about').addClass('fixedAbout');
-  //       $('.home-container').addClass('addPaddingForAbout');
-  //     }
-  //
-  //     if($(document).scrollTop() < homeHeight ) {
-  //       $('.about').removeClass('fixedAbout');
-  //       $('.home-container').removeClass('addPaddingForAbout');
-  //     }
+  componentDidMount() {
+
+    let aboutHeight = $(".about-section-container").offset().top;
+    let workHeight = $(".work-section-container").offset().top;
+
+    window.addEventListener("resize", () => {
+      aboutHeight = $(".about-section-container").offset().top;
+      workHeight = $(".work-section-container").offset().top;
+    });
+
+    $(window).scroll(() => {
+
+      if($(document).scrollTop() >= $(".about-section-container").offset().top ) {
+        $('.about-section-container').addClass('fixedAbout');
+        $('.home-container').addClass('addPaddingForAbout');
+        $('.header').addClass('white');
+      }
+      if($(document).scrollTop() < aboutHeight ) {
+        $('.about-section-container').removeClass('fixedAbout');
+        $('.header').removeClass('white');
+        // $('.home-container').removeClass('addPaddingForAbout');
+      }
+
+      if($(document).scrollTop() >= $(".work-section-container").offset().top ) {
+        $(".work-section-container").addClass('revealContact');
+        $(".contact-section-container").addClass('fixedContact');
+      }
+
+      if($(document).scrollTop() < workHeight ) {
+        $(".work-section-container").removeClass('revealContact');
+        $(".contact-section-container").removeClass('fixedContact');
+      }
 
 
-      // if($(document).scrollTop() > (homeHeight + aboutHeight) ) {
-      //   $('.home-container').addClass('addPaddingForWork');
-      //   $('.work-section-container').addClass('fixedWork');
-      // }
-
-
-
-      // if($(document).scrollTop() > 1665 ) {
-      //   $('.home-container').addClass('addPaddingForWork');
-      //   $('.work-section-container').addClass('fixedWork');
-      // }
-  //   })
-  // }
+    })
+  }
 
   scrollDown() {
     $('html,body').animate({

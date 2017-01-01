@@ -20,23 +20,15 @@ export default class MainNav extends Component {
   }
 
   scrollToAbout() {
-    if($(document).scrollTop() > 835) {
-      $("html, body").animate({ scrollTop: "835px" });
-    } else {
       $('html,body').animate({
-          scrollTop: $(".about").offset().top},
+          scrollTop: $(".about-section-container").offset().top},
           'slow');
-    }
   }
 
   scrollToWork() {
-    if($(document).scrollTop() > 1590) {
-      $("html, body").animate({ scrollTop: "1590px" });
-    } else {
       $('html,body').animate({
           scrollTop: $(".work-section-container").offset().top},
           'slow');
-    }
   }
 
   scrollToContact() {
