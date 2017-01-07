@@ -1,7 +1,7 @@
 .work-section-container {
   min-height: 140vh;
   position: relative;
-  padding-top: 80px;
+  padding-top: 25px;
   z-index: 6001;
   background: #fff;
 }
@@ -85,13 +85,6 @@
 
   }
 }
-/*.work-img-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-}*/
 
 .work-img-container img {
   width: 350px;

@@ -9,11 +9,22 @@ margin:0;
 background-color: #49ba9c;
 }
 
+body::-webkit-scrollbar {
+  background: #d3d3d3;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #49ba9c;
+  /*border: 2px solid black;*/
+}
+
 img.logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
   width: 60vh;
 }
 

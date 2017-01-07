@@ -9,6 +9,82 @@
   /*box-shadow: 0 -5px 5px -5px #333;*/
 }
 
+.pic-container {
+  position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(170px);
+    -webkit-transform: translateX(170px);
+    -ms-transform: translateX(170px);
+    -moz-transform: translateX(170px);
+    z-index: 1;
+}
+.black-container {
+  position: absolute;
+    top: 200px;
+    left: 50%;
+    width: 400px;
+    height: 385px;
+    transform: translateX(-55%);
+    -webkit-transform: translateX(-55%);
+    -ms-transform: translateX(-55%);
+    -moz-transform: translateX(-55%);
+    z-index: 1;
+}
+.black-container img {
+  width: 400px;
+  height: 385px;
+}
+.pic-container2 {
+  position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-473px, 20px);
+    -webkit-transform: translate(-473px, 20px);
+    -ms-transform: translate(-473px, 20px);
+    -moz-transform: translate(-473px, 20px);
+    z-index: 2;
+}
+
+@media(max-width:791px) {
+  .pic-container {
+    position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translateX(120px);
+      -webkit-transform: translateX(120px);
+      -ms-transform: translateX(120px);
+      -moz-transform: translateX(120px);
+      z-index: 1;
+  }
+  .black-container {
+    position: absolute;
+      top: 200px;
+      left: 50%;
+      width: 300px;
+      height: 385px;
+      transform: translateX(-55%);
+      -webkit-transform: translateX(-55%);
+      -ms-transform: translateX(-55%);
+      -moz-transform: translateX(-55%);
+      z-index: 1;
+  }
+  .black-container img {
+    width: 300px;
+    height: 385px;
+  }
+  .pic-container2 {
+    position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translate(-422px, 20px);
+      -webkit-transform: translate(-422px, 20px);
+      -ms-transform: translate(-422px, 20px);
+      -moz-transform: translate(-422px, 20px);
+      z-index: 2;
+  }
+}
+
 .contact-section-container .img-container {
   width: 50%;
   float: right;
@@ -17,7 +93,7 @@
 
 .contact-section-container h1 {
   font-family: 'Bangers', cursive;
-  color: #ed4e52;
+  color: #f493aa;
   letter-spacing: 5px;
   font-size: 50px;
   transition: all .3s ease;
@@ -30,6 +106,8 @@
   max-width: 400px;
   float: none;
   margin: 0 auto;
+  z-index: 2;
+  position: relative;
 }
 
 @media(max-width:791px) {
@@ -92,6 +170,7 @@ footer {
   font-size: 20px;
     letter-spacing: 2px;
     font-family: Oswald;
+    z-index: 1;
 }
 
 footer p span {

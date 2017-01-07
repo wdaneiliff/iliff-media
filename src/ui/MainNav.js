@@ -6,6 +6,19 @@ import $ from 'jquery';
 
 export default class MainNav extends Component {
 
+  componentDidMount() {
+
+    let aboutHeight = $(".about-section-container").height();
+    let workHeight = $(".work-section-container").height();
+    // let aboutHeight = $(".about-section-container").offset().top;
+    // let workHeight = $(".work-section-container").offset().top;
+
+    window.addEventListener("resize", () => {
+       aboutHeight = $(".about-section-container").height();
+       workHeight = $(".work-section-container").height();
+    });
+  }
+
   hamburgerClickHandler() {
     const hamburger = document.querySelector('.hamburger');
     const sideNav = document.querySelector('.nav-container');
@@ -21,13 +34,15 @@ export default class MainNav extends Component {
 
   scrollToAbout() {
       $('html,body').animate({
-          scrollTop: $(".about-section-container").offset().top},
+          scrollTop: $(".about-section-container").height()},
           'slow');
   }
 
+
   scrollToWork() {
+      let workPosition = (($(".about-section-container").height() * 2));
       $('html,body').animate({
-          scrollTop: $(".work-section-container").offset().top},
+          scrollTop: workPosition},
           'slow');
   }
 

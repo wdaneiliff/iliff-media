@@ -14,7 +14,7 @@ export default class About extends Component {
           <p>Iliff Media is a creative design and development agency created by Dane Iliff.
              It specializes in website design, development, logo creation, character
              illustration, web animation, HTML5 banner ads and more. Let's work together to build
-             you a personal and creative digital experience.
+             you a personal and creative digital experience!
          </p>
         </div>
       </div>

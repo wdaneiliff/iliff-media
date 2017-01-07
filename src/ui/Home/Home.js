@@ -11,22 +11,32 @@ export default class Home extends Component {
 
   componentDidMount() {
 
+    let homeHeight = $(".home-container").height();
     let aboutHeight = $(".about-section-container").offset().top;
     let workHeight = $(".work-section-container").offset().top;
 
     window.addEventListener("resize", () => {
+      let homeHeight = $(".home-container").offset().height();
       aboutHeight = $(".about-section-container").offset().top;
       workHeight = $(".work-section-container").offset().top;
-    });
 
-    $(window).scroll(() => {
-
-      if($(document).scrollTop() >= $(".about-section-container").offset().top ) {
+      if($(document).scrollTop() >= homeHeight ) {
+        $('.about-section-container').addClass('fixedToTop');
         $('.about-section-container').addClass('fixedAbout');
         $('.home-container').addClass('addPaddingForAbout');
         $('.header').addClass('white');
       }
-      if($(document).scrollTop() < aboutHeight ) {
+
+    });
+
+    $(window).scroll(() => {
+
+      if($(document).scrollTop() >= aboutHeight ) {
+        $('.about-section-container').addClass('fixedAbout');
+        $('.home-container').addClass('addPaddingForAbout');
+        $('.header').addClass('white');
+      }
+      if($(document).scrollTop() < homeHeight ) {
         $('.about-section-container').removeClass('fixedAbout');
         $('.header').removeClass('white');
         // $('.home-container').removeClass('addPaddingForAbout');

@@ -139,7 +139,7 @@ h1.iliff-media span:hover {
   }
 
    .hamburger span {
-    display: block;
+    display: none;
     position: absolute;
     height: 6px;
     width: 100%;
@@ -263,6 +263,7 @@ h1.iliff-media span:hover {
     padding: 20px;
   }
   .nav-container {
+    display: none;
     width: 100%;
     transform:translateY(-100%);
     -webkit-transform:translateY(-100%);
